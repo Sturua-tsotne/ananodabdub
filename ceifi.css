@@ -1,0 +1,57 @@
+body {
+    position: fixed;
+}
+
+.maindiv {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: bisque;
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.shaman {
+
+    margin-left: 50%;
+
+    transform: translate(-50%);
+
+    display: flex;
+
+    border-radius: 50%;
+
+    background-color: red;
+
+    width: 50px;
+
+    height: 50px;
+}
+
+.shamaniomein {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 100px;
+
+}
+
+.temur {
+    margin-left: 10%;
+}
+
+.anano {
+    margin-left: 25%;
+}
+
+.dodyshaman {
+    margin-top: -15px;
+    width: 100%;
+    height: 100%;
+}

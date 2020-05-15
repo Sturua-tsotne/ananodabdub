@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  background-origin: padding-box;
+  cursor: none;
+}
+
+/* cursor  */
+body {
+  position: fixed;
+  cursor: none !important;
+  cursor: none;
+  background-color: #900c3f
+}
+
+.cursor {
+  background-repeat: no-repeat, repeat;
+  background-image: url(./cursorimg.svg);
+  cursor: none;
+  z-index: 99;
+  height: 80px;
+  width: 80px;
+  border-radius: 30%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.7);
+  }
+}
+
+.text1,
+.text2,
+.text3,
+.text4 {
+  color: rgb(149, 148, 150);
+  position: absolute;
+}
+
+.backgraund {
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+}
+
+.backgraund::before {
+  content: "";
+  display: block;
+}
+
+.backg {
+  float: left;
+  padding: 118px;
+  margin-top: -50px;
+}
+
+.Cake {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+}
+
+.Cake1 {
+  width: 100%;
+  height: 100%;
+}
+
+#next {
+  position: fixed;
+  float: right;
+  margin-top: 171px;
+  margin-left: 85%;
+
+}
+
+.nextclos {
+  display: none;
+}
+
+.nextopen {
+  display: block !important;
+
+}
+
+.nextanim {
+
+  transition-timing-function: ease-out;
+  animation: nextopen 1s infinite alternate;
+}
+
+@keyframes nextopen {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.7);
+  }
+}
+
+.Cake2 {
+  width: 100%;
+  height: 100%;
+}
+
+.texnon {
+
+  font-size: 20px;
+  position: initial;
+  margin-bottom: 20px;
+}
+
+.text {
+  display: none;
+  position: absolute;
+  color: rgb(201, 201, 201);
+}
+
+.stylenon {
+  display: none;
+}
+
+.mystyle {
+  display: block !important;
+}
+
+.textm1 {
+  font-size: 19px;
+  position: initial;
+  margin-bottom: 20px;
+}
+
+.textm2 {
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+.textm3 {
+  margin-top: 20%;
+  margin-left: 15%;
+}
