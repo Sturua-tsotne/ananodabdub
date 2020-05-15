@@ -6,18 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="ceifi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./qeifi.js"></script>
+
 </head>
 
 <body>
     <div class="maindiv">
         <div class="shamaniomein temur ">
+            <div class="text">
+                <h6>თამადის მოადგილე</h6>
+                <p>
+                    მოვუსმინოთ თამადას ყველა ვსვამთ ბოლომდე !
+                    გილოცავ ანანო წარმატებები და წინ სვლა ყოველთვის.
+                </p>
+            </div>
+
             <div class="shaman">
+
                 <img src="./img/temur.jpg" alt="">
             </div>
             <img class="dodyshaman" src="./img/temo.svg" alt="">
         </div>
 
         <div class="shamaniomein anano">
+            <div class="text">
+                <h6>იუბილარი</h6>
+                <p>
+                    ძალიან დიდი მადლობა მეგობრებო, მადლობა ყველას მიყვარხართ.
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/anano.jpg" alt="">
             </div>
@@ -25,6 +43,15 @@
         </div>
 
         <div class="shamaniomein dato">
+            <div class="text">
+                <h6>ძლიერი ადამიანი</h6>
+                <p>
+                    ყანწით მაშინებ !
+                    ერთი გადმომაწოდე რა ,
+                    გილოცავ ანანო , ვაღიერებ ჩემზე ძლიერი ხარ
+
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/dato.jpg" alt="">
             </div>
@@ -32,6 +59,14 @@
         </div>
 
         <div class="shamaniomein mari">
+            <div class="text">
+                <h6>თამადის მოადგილე ნარატივებში </h6>
+                <p>
+                    ნარატივებო ნუ ნარატივობთ მოუსმინეთ შამანს,
+                    გილოცავ ანანო, ძალიან მიყვარხარ, გისურვებ ბევრ და უზომო ბედნიერებას
+
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/mari.jpg" alt="">
             </div>
@@ -39,6 +74,13 @@
         </div>
 
         <div class="shamaniomein qetia">
+            <div class="text">
+                <p>
+                    მართალია მე ძაან წვრილივარ მაგრამ დალევა ვიცი უჰ,
+                    გილოცავ ყველა მიზნისთვის მიგეღწიოს
+
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/qetia.jpg" alt="">
             </div>
@@ -46,6 +88,14 @@
         </div>
 
         <div class="shamaniomein TamTa">
+            <div class="text">
+                <h6>.</h6>
+                <p>
+                    მაგარი წვეულებაა ვგუგუნებთ ყველა
+
+                    გილოცავ ყველა მოლოდინი რაცგაქვს გაგმართლებოდეს და ბევრი წარმატება შენი
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/TamTa.png" alt="">
             </div>
@@ -53,12 +103,72 @@
         </div>
 
         <div class="shamaniomein zura">
+            <div class="text">
+                <h6>თამადა</h6>
+                <p>
+                    მოდი მეგობრებო მიულოცოთ ჩვენს
+                    მელას, წარმატებები მელა გენ გენ,
+                    მრავალს დაესწარი,
+                    კარგი მუსიკა მოუხდებოდა ამ სიტუაციას, ყველა ვცეკვავთ!
+                </p>
+            </div>
             <div class="shaman">
                 <img src="./img/zura.jpg" alt="">
             </div>
             <img class="dodyshaman" src="./img/body.svg" alt="">
         </div>
     </div>
+    <script>
+        $(".zura").mouseenter(function () {
+            $(".zura .text").css("display", "block");
+        });
+        $(".zura").mouseleave(function () {
+            $(".zura .text").css("display", "none");
+        });
+
+        $(".anano").mouseenter(function () {
+            $(".anano .text").css("display", "block");
+        });
+        $(".anano").mouseleave(function () {
+            $(".anano .text").css("display", "none");
+        });
+
+        $(".TamTa").mouseenter(function () {
+            $(".TamTa .text").css("display", "block");
+        });
+        $(".TamTa").mouseleave(function () {
+            $(".TamTa .text").css("display", "none");
+        });
+
+        $(".qetia").mouseenter(function () {
+            $(".qetia .text").css("display", "block");
+        });
+        $(".qetia").mouseleave(function () {
+            $(".qetia .text").css("display", "none");
+        });
+
+        $(".mari").mouseenter(function () {
+            $(".mari .text").css("display", "block");
+        });
+        $(".mari").mouseleave(function () {
+            $(".mari .text").css("display", "none");
+        });
+
+        $(".dato").mouseenter(function () {
+            $(".dato .text").css("display", "block");
+        });
+        $(".dato").mouseleave(function () {
+            $(".dato .text").css("display", "none");
+        });
+
+        $(".temur").mouseenter(function () {
+            $(".temur .text").css("display", "block");
+        });
+        $(".temur").mouseleave(function () {
+            $(".temur .text").css("display", "none");
+        });
+    </script>
+
 </body>
 
 </html>
